@@ -1,0 +1,488 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #f68;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+html {
+	min-width: 320px;
+	font-size: 20px;
+}
+body {
+	font-size: 0.6rem;
+}
+header .top {
+	padding: 0 0.5rem;
+	background-color: #333;
+	color: #fff;
+	/*font-size: 0.6rem;*/
+}
+header .top p {
+	height: 1.8rem;
+	line-height: 1.8rem;
+}
+header .top .hotline {
+	float: left;
+}
+header .top .coming {
+	float: right;
+}
+header .top .coming a {
+	padding: 0 0.5rem;
+}
+@media screen and (max-width: 400px) {
+	.top .hotline {
+		display: none;
+	}
+}
+.nav {
+	padding: 0 0.8rem;
+}
+.nav .logo {
+	float: left;
+	height: 2.5rem;
+}
+.nav .logo img {
+	height: 100%;
+}
+.nav nav {
+	float: right;
+}
+.nav nav ul {
+	display: flex;
+	height: 2.5rem;
+}
+.nav nav ul li {
+	padding: 0 1rem;
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+}
+.nav nav ul li + li {
+	border-left: 0.05rem solid #ccc;
+}
+.nav nav ul li a {
+	color: inherit;
+}
+@media screen and (max-width: 700px) {
+	.nav .logo {
+		float: none;
+		text-align: center;
+	}
+	.nav nav {
+		width: 100%;
+	}
+	.nav nav ul {
+		justify-content: center;
+	}
+	.nav nav ul li:nth-child(2) {
+		display: none;
+	}
+	.content .cont-top p {
+		font-size: 0.6rem;
+	}
+	.content .cont-top p span {
+		vertical-align: baseline;
+		height: 0.8rem;
+		line-height: 0.8rem;
+		font-size: 0.6rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	.nav nav ul li:nth-child(3) {
+		display: none;
+	}
+	.c-top .cont-top p {
+		float: none;
+		text-align: center;
+	}
+	.content div.show {
+		height: 10rem;
+	}
+}
+@media screen and (max-width: 280px) {
+	.nav nav ul li:nth-child(4) {
+		display: none;
+	}
+}
+.content .c-top {
+	background-color: #333;
+}
+.content .c-top .cont-top {
+	width: 90%;
+	padding: 0 0.8rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.cont-top p {
+	float: left;
+	padding: 0.5rem 0;
+	font-size: 0.8rem;
+	color: #fff;
+}
+.cont-top p span {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 1rem;
+	padding: 0 0.3rem;
+	margin: 0 0.3rem;
+	line-height: 1rem;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	font-size: 0.7rem;
+	color: #23f8a1;
+}
+.cont-top .more {
+	float: right;
+}
+
+.content .mark {
+	display: flex;
+	width: 90%;
+	margin: 1.1rem auto;
+	/*background-color: #ccc;*/
+}
+/**/
+.content .show {
+	position: relative;
+	height: 15rem;
+	overflow: hidden;
+	/*background-color: #36ca24;*/
+}
+	.show .item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 6%;
+}
+.show .item:nth-of-type(1) {
+	display: block;
+	background: url(../images/bg-1.jpg) no-repeat center/cover;
+}
+.show .item:nth-of-type(2) {
+	background: url(../images/bg-2.jpg) no-repeat center/cover;
+}
+.show .item:nth-of-type(3) {
+	background: url(../images/bg-3.jpg) no-repeat center/cover;
+}
+.show .item .item-word-des {
+	float: left;
+	display: -webkit-box;
+	width: 66%;
+	color: #fff;
+	font-weight: bold;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.show .left-right-btn {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translate(0, -50%);
+	overflow: hidden;
+}
+.show .left-right-btn .left-btn {
+	float: left;
+	background: url(../images/left-arrow.png) no-repeat;
+}
+
+.show .left-right-btn .right-btn {
+	float: right;
+	background: url(../images/right-arrow.png) no-repeat;
+}
+.show .left-right-btn span {
+	width: 28px;
+	height: 40px;
+	cursor: pointer;
+}
+.show .control-btn {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.show .control-btn ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.show .control-btn ul li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 8px;
+	background: rgba(208,208,208, .5);
+	cursor: pointer;
+}
+.show .control-btn ul li.active {
+	background: rgba(208,208,208, 1);
+}
+	
+/**/
+.mark .item {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	height: 4rem;
+	flex-shrink: 1;
+	/*background-color: #eee;*/
+	box-shadow: 0 0 8px  #999;
+}
+.mark .item + .item {
+	margin-left: 1rem;
+}
+.mark .item .name {
+	padding: 0 1rem;
+	font-size: 1.6rem;
+	color: #0021e5;
+}
+.mark .item p {
+	font-size: 0.7rem;
+	color: #ccc;
+}
+@media screen and (max-width: 700px) {
+	.content .mark .item {
+		height: 7rem;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.mark .item > div {
+		width: 100%;
+		text-align: center;
+	}
+	.mark .item .name {
+		padding: 0.5rem 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.content .mark {
+		flex-wrap: wrap;
+	}
+	.content .mark .item {
+		width: 100%;
+		height: 4rem;
+		margin: 0;
+		align-items: center;
+	}
+	.content .mark .item + .item {
+		margin-top: 0.5rem;
+	}
+	.mark .item > div {
+		width: auto;
+	}
+	.mark .item .name {
+		width: 40%;
+	}
+	.mark .item p {
+		font-size: 0.8rem;
+		text-align: left;
+	}
+}
+.content .course {
+	width: 90%;
+	margin: 0 auto;
+	border-top: 0.15rem solid rgb(45, 120, 244);
+	background-color: #f5f5f5;
+	box-shadow: 0 0 5px #ccc;
+}
+.course .prelude {
+	float: left;
+	width: 20%;
+	padding-top: 3rem;
+	text-align: center;
+	color: #999;
+}
+.prelude h2 {
+	font-size: 1.3rem;
+	height: 2rem;
+	font-weight: normal;
+}
+.prelude p {
+	line-height: 1.5rem;
+}
+.course .course-detail {
+	float: left;
+	width: 80%;
+	/*height: 22rem;*/
+	/*border: 0.05rem solid #ddd;*/
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.course-detail .c-course {
+	display: flex;
+	/*height: 25%;*/
+	border-bottom: 0.05rem solid #ddd;
+	box-sizing: border-box;
+}
+.c-course .subject {
+	width: 30%;
+	text-align: center;
+	line-height: 5.45rem;
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+.c-course .plan {
+	width: 50%;
+	display: flex;
+}
+.c-course .in-class {
+	width: 20%;
+}
+.c-course > div {
+	/*display: flex;
+	height: 100%;*/
+	height: 5.5rem;
+	border-left: 0.05rem solid #ddd;
+	box-sizing: border-box;
+}
+.c-course .plan .live {
+	width: 60%;
+}
+.c-course .plan .record {
+	width: 40%;
+}
+.c-course .plan > div {
+	line-height: 5.45rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+.c-course .plan span {
+	position: relative;
+	top: -3px;
+	font-size: 1.3rem;
+	color: rgb(45, 120, 244);
+	vertical-align: top;
+}
+.c-course .plan i {
+	font-size: 0.6rem;
+	color: #ccc;
+}
+/*.c-course .in-class {
+	text-align: center;
+}*/
+.c-course .in-class a {
+	display: block;
+	width: 90%;
+	height: 2.5rem;
+	margin: 1.45rem auto 1.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.7rem;
+	background-color: rgb(45, 120, 244);
+	border-radius: 0.3rem;
+}
+@media screen and (max-width: 700px) {
+	.course .prelude,
+	.course .course-detail {
+		float: none;
+		width: 100%;
+	}
+	.course .prelude {
+		height: 4rem;
+		line-height: 4rem;
+		padding: 0;
+	}
+	.course .prelude > * {
+		display: inline-block;
+	}
+	.course .prelude h2 {
+		height: auto;
+	}
+}
+@media screen and (max-width: 400px) {
+	.prelude p:last-child {
+		display: none;
+	}
+	.course-detail .c-course {
+		flex-wrap: wrap;
+	}
+	.c-course .subject {
+		width: 30%;
+	}
+	.c-course .plan {
+		width: 70%;
+	}
+	.c-course .in-class {
+		width: 100%;
+		height: 3.6rem;	
+		border-top: 0.05rem solid #eee;
+	}
+	.c-course .in-class a {
+		margin: 0.55rem auto;
+	}
+}
+.more-mes {
+	margin-top: 1.2rem;
+	border-top: 0.15rem solid #ccc;
+}
+.more-mes .more-con {
+	width: 90%;
+	padding: 2rem 0;
+	margin: auto;
+}
+.more-con .b-logo {
+	float: left;
+	width: 20%;
+	height: 6rem;
+	padding-right: 1rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+.more-con .b-logo img {
+	width: 95%;
+}
+.more-con .about {
+	float: left;
+	width: 80%;
+}
+.about dl {
+	float: left;
+	width: 25%;
+}
+.about dl dt {
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+}
+.about dl dd {
+	line-height: 1.5rem;
+	font-size: 0.7rem;
+}
+@media screen and (max-width: 700px) {
+	.more-con .b-logo {
+		display: none;
+	}
+	.more-con .about {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.about dl dt {
+		font-size: 0.7rem;
+	}
+	.about dl dd {
+		font-size: 0.6rem;
+	}
+}
+footer {
+	background-color: #eee;
+	text-align: center;
+	padding: 1.5rem 0;
+	color: #bbb;
+}
+footer p {
+	line-height: 1rem;
+}

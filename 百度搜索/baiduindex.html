@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			font-size: 12px;
+			color:#999;
+			padding:0;
+			margin:0;
+			height:100%;
+			overflow:hidden;
+		}
+		*{
+			padding:0;
+			margin:0;
+		}
+		input{
+			padding:0;
+			margin:0;
+			border:0;
+		}
+		.header{
+			height:150px;
+			text-align: right;
+			font-weight:bold;
+			font-size:0;
+			border-top:30px solid #fff;
+		}
+		.content{
+			height: 460px;
+		}
+		.footer{
+			height: 200px;
+		}
+		.footer a{
+			color:#999;
+			font-size: 12px;
+		}
+		.footer i{
+			background:url(images/iconsall.png) no-repeat;
+			vertical-align:bottom;
+			margin-bottom:0;
+		}
+		.footer .poli_i{
+			display:inline-block;
+			width:14px;
+			height:17px;
+			background-position:-600px -96px;
+			margin:0 12px 0 5px;
+		}
+		.footer .bei_i{
+			display:inline-block;
+			width:14px;
+			height:16px;
+			background-position:-623px -97px;
+			margin-left:5px;
+		}
+		.header a {
+			color:#333;
+			font-size:13px;
+			margin-right:20px;
+		}
+		.header a:hover{
+			color:blue;
+		}
+		.logos{
+			height:150px;
+		}
+		.logos img{
+			height:129px;
+		}
+		input[type=text]{
+			width:500px;
+			height:30px;
+			outline-width:1px;
+			border:1px solid #ccc;
+			/*vertical-align:top;*/
+		}
+		/* input type=text  和submit 在一行显示，高度一样的情况下，chrome submit栏向上偏移1px ;	IE9以上 向上偏移1px
+		IE7对齐，IE8问题很大向上偏移了6px; 火狐最新正常 
+		可以1:; 给 input type=text 加上 vertical-align:top;  IE8及以上都能对齐， chrome 也能对齐  ;IE7未能对齐
+		 	2: 给  input type=submit  加上 vertical-align:bottom IE8及以上都能对齐 IE7未能对齐，向下偏移1px chrome 对齐;
+		*/
+		input[type=submit]{
+			width:100px;
+			height:32px;
+			background:#3385ff;
+			color:#fff;
+			outline:none;
+			vertical-align:bottom;
+		}
+		input[type=submit]:hover{
+			background:#3192f3;
+		}
+		.phone{
+			height:70px;
+		}
+		.cellp{
+			height:50px;
+			font-weight: bold;
+		}
+		.tg{
+			height:25px;
+		}
+		.tg a+a{
+			margin-left:20px;
+		}
+		.header span{
+			display:none;
+			width:72px;
+			height:106px;
+			text-align: left;
+			font-weight: normal;
+			padding:0;
+			position:absolute;
+			right:70px;
+			top:55px;
+			border:1px solid #d1d1d1;
+			box-sizing:border-box;
+		}
+		span a {
+			display:block;
+			width:70px;
+			height:26px;
+			text-decoration: none;
+			text-align: center;
+			line-height:26px;
+		}
+		.header span a:hover{
+			background:#3388ff;
+			color:white;
+		}
+		.header .mproduct{
+			width:60px;
+			display:inline-block;
+			margin-right:10px;
+			text-decoration: none;
+			background:#38f;
+			line-height:24px;
+			color:#fff;
+			text-align: center;
+			font-weight: normal;
+			position:relative;
+		}
+		.normals{
+			font-weight: normal;
+		}
+		#hidden_tools{
+			height:100%;
+			width:80px;
+			background:#f9f9f9;
+			position:absolute;
+			top:0;
+			right:0;
+			border-right:1px solid #e7e7e7;
+			border-left:1px solid #e7e7e7;
+			display:none;
+		}
+		#hidden_tools ul{
+			list-style: none;
+			text-align: left;
+			padding:0;
+			margin:0;
+			padding:0 10px;
+		}
+		#hidden_tools li{
+			height:70px;
+			width:60px;
+			border-bottom:1px solid #f0f0f0;
+		}
+		#hidden_tools .allspro{
+			border:none;
+			padding-left:0;
+		}
+		#hidden_tools .allspro a{
+			font-size: 12px;
+		}
+		#hidden_tools li+li{
+			padding-top:15px;
+		}
+		#hidden_tools li a {
+			font-size:13px;
+			color:#333;
+			text-decoration: none;
+			display:block;
+			width:58px;
+			height:68px;
+			text-align: center;
+		}
+		#hidden_tools li a:hover{
+			text-decoration: underline;
+		}
+		i{
+			display:block;
+			width:36px;
+			height:36px;
+			background:url(images/incos.png) no-repeat;
+			margin:0 auto 6px auto;
+		}
+		.btn1{
+			width:40px;
+			height:24px;
+			background-position:-72px -11px;
+		}	
+		.btn2{
+			width:30px;
+			height:32px;
+			background-position:-114px -4px;
+		}
+		.btn3{
+			background-position:-36px 0;
+		}
+		.btn4{
+			width:30px;
+			height:35px;
+			background-position:-150px 0;
+		}
+		.btn5{
+			width:36px;
+			height:32px;
+			background-position:-184px -3px;
+		}	
+		#hidden_tools li:first-child{
+			height:40px;
+			padding-top:20px;
+			line-height:42px;
+			text-align: center;
+			font-size: 13px;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+	<a href="#">新闻</a>
+	<a href="#">hao123</a>
+	<a href="#">地图</a>
+	<a href="#">视频</a>
+	<a href="#">贴吧</a>
+	<a href="#">学术</a>
+	<a href="#" class="normals">登录</a>
+	<a href="html/setting.html" class="normals">设置
+	</a>
+	<span>
+		<a href="">搜索设置</a>
+		<a href="">高级搜索</a>
+		<a href="">关闭预测</a>
+		<a href="">搜索历史</a>
+	</span>
+	<a href="#" class="mproduct">更多产品</a>
+</div>
+<div id="hidden_tools">
+	<ul>
+		<li>更多产品</li>
+		<li><a href=""><i class="btn"></i>糯米</a></li>
+		<li><a href=""><i class="btn1"></i>音乐</a></li>
+		<li><a href=""><i class="btn2"></i>图片</a></li>
+		<li><a href=""><i class="btn3"></i>知道</a></li>
+		<li><a href=""><i class="btn4"></i>文库</a></li>
+		<li><a href=""><i class="btn5"></i>风云榜</a></li>
+		<li class="allspro"><a href="">全部产品>></a></li>
+	</ul>
+</div>
+<div class="content">
+	<div class="logos">
+	<img src="images/bd_logo1.png">
+	</div>
+	<input type="text" name="" id=""><!-- 由于 input 是内联元素，所有他们之间会有间隙，解决方式 1：将他们写在一行。2：间隔的地方用注释 
+	--><input type="submit" value="百度一下">
+</div>
+<div class="footer">
+	<div class="phone">
+	<img src="images/phone.png">
+	</div>
+	<div class="cellp">手机百度
+	</div>
+	<div class="tg">
+		<a href="">把百度设为主页</a>
+		<a href="">关于百度</a>
+		<a href="">About  Baidu</a>
+		<a href="">百度推广</a>
+	</div>
+        &copy;2017 Baidu<a href="">使用百度前必读</a><a href="">意见反馈</a>京ICP证030173号<i class="poli_i"></i><a href="">京公网安备11000002000001号</a><i class="bei_i"></i>
+</div>
+<script>
+	window.onload=function(){
+		var hidden_tools=document.getElementById("hidden_tools");
+		var mproduct=document.getElementsByClassName("mproduct")[0];
+		var normals=document.getElementsByClassName("normals")[1];
+		var he_span=document.getElementsByClassName("header")[0].getElementsByTagName("*")[8];
+		mproduct.onmouseover=function(){
+			hidden_tools.style.display="block";
+		}
+		hidden_tools.onmouseout=function(){
+			this.style.display="none";
+		}
+		normals.onmouseover=function(){
+			he_span.style.display="block";
+		}
+		he_span.onmouseout=function(){
+			this.style.display="none";
+		}
+	}
+</script>
+</body>
+</html>

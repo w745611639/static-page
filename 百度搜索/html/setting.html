@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		body{
+			margin:8px 20px 0 20px;
+			font-size: 12px;
+		}
+		img{
+			width:137px;
+			height:46px;
+		}
+		.nav{
+			width:140px;
+			height:20px;
+			display:inline-block;
+			float:right;
+			padding-top:26px;
+			text-align: center;
+		}
+		.nav a{
+			padding:0 8px;
+			color:#261CDC;
+		}
+		.nav a+a {
+			border-left:1px solid #000;
+		}
+		.search{
+			height:25px;
+			background:#e5ebf9;
+			padding-left:15px;
+			line-height:25px;
+			margin-top:15px;
+		}
+		strong{
+			font-size: 14px;
+			padding-right:10px;
+		}
+		table{
+			width:900px;
+			height:200px;
+			margin-bottom:20px;
+		}
+		tr{
+			height:25px;
+		}
+		.thead{
+			width:140px;
+			text-align:left;
+			padding-left:15px;
+		}
+		.special{
+			padding-left:459px;
+		}
+		input{
+			margin-right:10px;
+			vertical-align:baseline;
+		}
+		input+input{
+			margin-left:10px;
+		}
+		.rsets{
+			margin:0;
+			padding:2px;
+			border:1px solid #707070;
+			border-radius:2px;
+		}
+		.footer{
+			height:15px;
+			background: #e6e6e6;
+			color:#7777cc;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<img src="../images/logo-set.gif" alt="对不起，图片找不到了">
+	<div class="nav">
+		<a href="">帮助中心</a><a href="../baiduindex.html">返回首页</a>
+	</div>
+	<div class="search">
+		<strong>搜索设置</strong>请先确认您的浏览器启用了 cookie，否则无法使用搜索设置
+	</div>
+	<table>
+	<form>
+		<tr>
+			<th class="thead">搜索框提示</th>
+			<td>是否希望在搜索时显示搜索框提示</td>
+			<td><input type="radio" name="dispalys" value="display">显示<input type="radio" name="dispalys" value="hidden">不显示</td>
+		</tr>
+		<tr>
+			<th class="thead">搜索语言范围</th>
+			<td>设定您所要搜索的网页内容的语言</td>
+			<td><input type="radio" name="language" value="alls">全部语言<input type="radio" name="language" value="jianti">仅简体中文<input type="radio" name="language" value="fanti">仅繁体中文</td>
+		</tr>
+		<tr>
+			<th class="thead">搜索结果显示条数</th>
+			<td>设定您希望搜索结果显示的条数</td>
+			<td>
+				<select>
+					<option>每页显示10条</option>
+					<option>每页显示20条</option>
+					<option>每页显示50条</option>
+				</select><!-- 
+				 -->百度的原始设定10条最有效且快速
+			</td>
+		</tr>
+		<tr>
+			<th class="thead">输入法</th>
+			<td>设定在百度搜索页面的输入法</td>
+			<td><select>
+					<option>手写</option>
+					<option>拼音</option>
+					<option selected="selected">关闭</option>
+				</select></td>
+		</tr>
+		<tr>
+			<th class="thead">实时预测功能</th>
+			<td>是否希望在您输入时实时展现搜索结果</td>
+			<td>
+				<select>
+					<option>开启</option>
+					<option>关闭</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th class="thead">搜索历史记录</th>
+			<td>是否希望在搜索时显示您的搜索历史</td>
+			<td><input type="radio" name="his_display" value="h_display">显示<input type="radio" name="his_display" value="h_hidden">不显示</td>
+		</tr>
+		<tr>
+			<td colspan="3" class="special"><input type="submit" value="保存设置" class="rsets"><input type="reset" value="恢复默认" class="rsets"></td>
+		</tr>
+	</form>
+	</table>
+	<div class="footer">
+		©2017 Baidu
+	</div>
+</body>
+</html>

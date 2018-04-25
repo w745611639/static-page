@@ -1,0 +1,362 @@
+@charset 'UTF-8';
+#container {
+	max-width: 750px;
+	min-width: 320px;
+	margin: auto;
+}
+/*--头部样式设置--*/
+#container .header {
+	position: fixed;
+	width: 7.5rem;
+	z-index: 1;
+	padding-top: .12rem;
+	top: 0;
+	background: #fafafa;
+}
+.h-search .h-s-logo {
+	float: left;
+	width: .5rem;
+	padding: .09rem 0 .08rem .3rem;
+}
+.h-search .h-s-logo img {
+	display: block;
+	width: 100%;
+}
+.h-search .h-s-search {
+	float: left;
+	width: 5.48rem;
+	height: .5rem;
+	border: 1px solid #ccc;
+	border-radius: .08rem;
+	margin-left: .24rem;
+	background: url(../images/search.png) no-repeat;
+	background-size: 5.48rem .5rem;
+}
+.h-search .h-s-search a { 
+	display: block;
+	line-height: .5rem;
+	text-indent: .6rem;
+	font-size: .22rem;
+}
+.h-search .h-s-login {
+	float: left;
+	width: .92rem;
+	padding: .08rem 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: .26rem;
+	color: #ccc;
+}
+.header .h-nav {
+	margin-top: .3rem;
+}
+.h-nav ul {
+	display: flex;
+	justify-content: space-around;
+	font-size: .26rem;
+}
+.h-nav ul li a {
+	display: block;
+	padding-bottom: .05rem;
+}
+.h-nav ul .recommend a {
+	color: #ff6f00;
+	border-bottom: .05rem solid #ff6f00;
+}
+/*--头部样式结束---*/
+/*--content style start--*/
+.content {
+	margin-top: 1.39rem;
+	background: #fff;
+}
+.content .banner {
+	position: relative;
+	height: 3.75rem;
+}
+.banner .ban-show li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner .ban-show li a{
+	display: block;
+}
+.banner .ban-show li a img {
+	display: block;
+	width: 7.5rem;
+}
+.banner .ban-control {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	bottom: .24rem;
+	right: 1.2rem;
+	width: .54rem;
+	height: .1rem;
+}
+.banner .ban-control li {
+	width: .08rem;
+	height: .08rem;
+	border-radius: 50%;
+	border: 1px solid #403a30;
+}
+.content .app-center ul{
+	display: flex;
+	justify-content: space-around;
+	font-size: .16rem;
+	padding-bottom: .2rem;
+	border-bottom: .01rem solid #ccc;
+}
+.app-center ul li {
+	text-align: center;
+}
+.app-center ul li a {
+	display: block;
+}
+.app-center ul li a img {
+	width: 1.44rem;
+}
+.shop-report {
+	height: .75rem;
+}
+.shop-report a {
+	display: inline-block;
+	height: .75rem;
+	margin-left: .1rem;
+	line-height: .75rem;
+	font-size: .24rem;
+	vertical-align: top;
+	color: #403a30;
+}
+.shop-report a.details {
+	position: relative;
+}
+.shop-report a.details:before {
+	content: "";
+	position: absolute;
+	top: .25rem;
+	left: -.34rem;
+	width: .01rem;
+	height: .24rem;
+	background: #ccc;
+}
+.shop-report a img {
+	display: block;
+	width: 1.5rem;
+}
+.con-pic {
+	height: 12rem;
+	text-indent: .24rem;
+}
+.con-pic .pic-item1 {
+	float: left;
+	width: 3.54rem;
+	height: 5.05rem;
+	margin-right: .06rem;
+	margin-bottom: .12rem;
+	background:#cedff0;
+}
+.con-pic .pic-item1 a img {
+	width: 2.94rem;
+	margin-left: .28rem;
+}
+.con-pic .pic-item2 {
+	float: left;
+	width: 3.9rem;
+	height: 2.5rem;
+	margin-bottom: .05rem;
+	background:#b4e1e6;
+}
+.pic-item2 a img {
+	width: 2.1rem;
+	margin-left: 1.6rem;
+}
+.con-pic div a {
+	display: block;
+}
+.con-pic div h3{
+	font-size: .28rem;
+	color: #403a30;
+	margin-bottom: .06rem;
+	margin-top: .1rem;
+}
+.con-pic div p {
+	font-size: .14rem;
+}
+.con-pic .pic-item3 {
+	clear:left;
+	height: 2.8rem;
+	margin-bottom: .12rem;
+	background:#fadcd9 url(../images/recommend4.png) no-repeat right/2.98rem;
+} 
+.con-pic .pic-com {
+	background: #f3eedf url(../images/recommend5.png) no-repeat right/3.04rem;
+}
+.con-pic .pic-item3 a {
+	height: 100%;
+}
+.pic-item3 a .desc-word {
+	padding: .95rem 0;
+	margin-left: .2rem;
+	color: #403a30;
+}
+.pic-item3 a h2 {
+	font-size: .42rem;
+}
+.pic-item3 a p {
+	font-size: .24rem;
+}
+.pic-com .desc-word .internal {
+	width: .92rem;
+	margin-left: .2rem;
+	text-indent: 0;
+	text-align:center;
+	background: #cbb3ab;
+}
+.star-classfiy {
+	background: #fff;
+}
+.star-classfiy > h2 {
+	padding: .14rem 0;
+	font-size: .26rem;
+	font-weight: bold;
+	text-indent: .3rem;
+}
+.star-classfiy .s-class1 {
+	height: 3.75rem;
+	margin-bottom: .12rem;
+	background: #b5d5ee;
+}
+.s-class1 .desc-word {
+	display: inline-block;
+	padding-top: .2rem;
+	margin-left: 0;
+	text-indent: 0;
+	vertical-align: top;
+}
+.s-class1 .desc-img {
+	position: relative;
+	display: inline-block;
+	top: -.6rem;
+	width: 3.6rem;
+
+	/*margin-left: .3rem;	*/
+}
+.s-class1 .desc-img img {
+	width: 3.6rem;
+}
+.s-class1 .desc-word p {
+	font-size: .2rem;
+	margin-bottom: .18rem;
+}
+.s-class1 .desc-word .price {
+	font-size: .4rem;
+	color: #ff6f00;
+}
+.s-class2 {
+	height: 5.1rem;
+	background: #ffc0cb;
+}
+.s-class2 .same-style{
+	float: left;
+	width: 3.72rem;
+	height: 5.1rem;
+	background: #fff;
+}
+.s-class2 .left-pic {
+	margin-right: .06rem;
+}
+.s-class2 .same-style a {
+	padding: 0;
+}
+.s-class2 .same-style img {
+	display: block;
+	width: 3.72rem;
+}
+.s-class2 .same-style a {
+	height: 5.1rem;
+	text-indent: .3rem;
+}
+.s-class2 .same-style p {
+	font-size: .16rem;
+	margin-bottom: .05rem;
+}
+.s-class2 .same-style .price {
+	font-size: .32rem;
+	margin-bottom: 0.04rem;
+	color: #ff6f00;
+}
+.star-classfiy .s-class3 {
+	background: #f7ede1 url(../images/start2.png) no-repeat right/2.8rem;
+	margin-bottom: 0;
+}
+.star-classfiy .s-class4 {
+	float: left;
+	position: relative;
+	width: 3.72rem;
+	margin-bottom: 1.3rem;
+	text-indent: 0;
+}
+.star-classfiy .s-class4 + .s-class4 { 
+ 	margin-left: .06rem;
+ }
+.star-classfiy .s-class4 a {
+	padding: 0; 
+	width: 3.72rem;
+}
+.s-class4 a img {
+	width: 3.72rem;
+}
+.s-class4 .s-introduce {
+	position: absolute;
+	bottom: .46rem;
+	left: .26rem;
+	color: #fff;
+}
+.s-class4 .s-introduce h3 {
+	color: #fff;
+}
+.s-class4 .s-introduce p {
+	font-size: .2rem;
+}
+/*--content style end--*/
+/*--footer style --*/
+.footer {
+	clear: left;
+	position: fixed;
+	bottom: 0;
+	width: 7.5rem;
+	height: 1rem;
+	border-top: .01rem solid #ccc;
+	background: #fff;
+}
+.footer ul {
+	display: flex;
+	height: 1rem;
+	justify-content: space-around;
+}
+.footer ul li a {
+	display: block;
+}
+.footer ul li i {
+	display: block;
+	width: .4rem;
+	height: .4rem;
+	margin: .1rem 0;
+	background:url(../images/footer.png) no-repeat 0 -.4rem/.4rem;
+}
+.footer ul li p {
+	font-size: .18rem;
+}
+.footer ul li:first-child i {
+	background-position: 0 -2.4rem;
+}
+.footer ul li:first-child p{
+	color: #ff6f00;
+}
+.footer ul li:nth-child(3) i {
+	background-position: 0 -1.2rem;
+}
+.footer ul li:last-child i {
+	background-position: 0 -2rem;
+}

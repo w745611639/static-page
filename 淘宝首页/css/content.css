@@ -1,0 +1,314 @@
+@charset "utf-8";
+#content {
+	margin-bottom: 10px;
+	background: #eee;
+}
+#content .c-content {
+	width: 1190px;
+	margin:auto;
+}
+/*--核心导航区域开始--*/
+.c-content .cent-nav {
+	height: 800px;
+	background: pink;
+}
+.cent-nav .con-search {
+	height: 120px;
+	box-sizing: border-box;
+	padding-top: 24px;
+	background: #fff;
+}
+.con-search .logo {
+	float: left;
+	margin-left: 22px;
+	margin-top: 12px;
+}
+.con-search .logo a {
+	display: block;
+}
+.con-search .logo a  img {
+	display: block;
+	width: 142px;
+	height: 58px;
+}
+/*--center-search class start--*/
+.con-search .center-search {
+	float: left;
+	/*width: 630px;*/
+	margin-left: 60px;
+	margin-right: 150px;
+}
+.center-search .top-classfiy {
+	/*height: 22px;*/
+	color: #f60;
+}
+.top-classfiy ul {
+	margin-left: 18px;
+}
+.top-classfiy ul li {
+	float: left;
+}
+.top-classfiy ul li a {
+	display: block;
+	padding: 5px;
+	margin-right: 3px;
+	line-height: 12px;
+}
+.top-classfiy ul li a.active {
+	background: linear-gradient(to right, #ff9000, #ff5000);
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+	font-weight: bold;
+}
+.top-classfiy li a:hover {
+	background: rgb(255,238,229);
+}
+/*.center-search .frame-search {
+	height: 36px;
+}*/
+.frame-search input[type="text"],
+.frame-search .take-photo {
+	float: left;
+	height: 32px;
+	border: 2px solid #f60;
+}
+.frame-search input[type="text"] {
+	width: 472px;
+	border-right: none;
+	border-radius: 18px 0 0 18px;
+	text-indent: 26px;
+}
+.frame-search .take-photo {
+	width: 62px;
+	border-left: none;
+	border-right: none;
+}
+.frame-search .a-submit {
+	float: left;
+}
+.frame-search input[type="submit"] {
+	width: 94px;
+	height: 36px;
+	border: none;
+	border-radius: 0 18px 18px 0;
+	background: linear-gradient(to right, #ff9000, #ff5000 100%);
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+.center-search .b-recommend {
+	height: 24px;
+	margin-top: 4px;
+	color: #6b6b6b;
+}
+.center-search .b-recommend ul li {
+	float: left;
+}
+.center-search .b-recommend ul .more-navs {
+	float: right;
+}
+.b-recommend ul li + li {
+	margin-left: 6px;
+}
+.b-recommend ul li a {
+	display: block;
+	line-height: 24px;
+}
+.b-recommend ul li a.has-red {
+	color: #f60;
+}
+/*--center-search class end--*/
+.con-search .qr-code {
+	position: relative;
+	float: left;
+	width: 74px;
+	height: 88px;
+	border: 1px solid #ccc;
+}
+.qr-code a {
+	display: block;
+	padding: 6px;
+}
+.qr-code a span {
+	display: block;
+	margin-bottom: 2px;
+	color: #f60;
+	text-align: center;
+}
+.qr-code a img {
+	width: 62px;
+	height: 62px;
+}
+.qr-code a .close {
+	position: absolute;
+	left: -14px;
+	top: -1px;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ccc;
+}
+.top-con-nav {
+	/*height: 30px;*/
+	background: linear-gradient(to right, #ff9000, #ff5000);
+	font-weight: bold;
+}
+.top-con-nav ul,
+.top-con-nav h2 {
+	float: left;
+}
+.top-con-nav h2 {
+	width: 190px;
+	background-color: #f40;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.top-con-nav ul li {
+	float: left;
+	padding: 0 5px;
+}
+.top-con-nav ul li.line {
+	padding: 0 0 0 10px;
+	font-weight: normal;
+}
+.top-con-nav ul li a {
+	display: block;
+	padding: 0 5px;
+}
+.top-con-nav h2,
+.top-con-nav ul li.line,
+.top-con-nav ul li a {
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+}
+.top-con-nav .nav-bd {
+	font-size: 14px;
+}
+.center-show .left-nav-show,
+.cen-pic-show,
+.tao-first-letter {
+	float: left;
+}
+.center-show .left-nav-show {
+	width: 190px;
+	height: 520px;
+	border: 1px solid #f40;
+	border-top: none;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #666;
+	/*background: blue;*/
+}
+.left-nav-show ul {
+	padding-left: 25px;
+}
+.left-nav-show ul li {
+	float: left;
+	padding: 6px 0;
+}
+.left-nav-show ul li.slash {
+	padding: 6px;
+}
+.left-nav-show ul li a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+}
+.cen-pic-show {
+	width: 690px;
+	height: 510px;
+	margin: 10px;
+	background: blue;
+}
+.tao-first-letter {
+	width: 890px;
+	height: 100px;
+	background: orange;
+}
+.right-app {
+	float: right;
+	width: 290px;
+	height: 620px;
+	margin-top: 10px;
+	background: #f88;
+}
+/*--核心导航区域结束--*/
+/*--生活研究所区域开始--*/
+.c-content .live-grad {
+	height: 170px;
+	background: #ccc;
+}
+/*--生活研究所区域结束--*/
+/*--逛街好货区域开始--*/
+.c-content .good-product-shopping {
+	height: 660px;
+	background: #f40;
+}
+/*.good-product-shopping .good-product {
+	float:left;
+	width: 590px;
+	background: green;
+}
+.good-product-shopping .shopping {
+	float:right;
+	width: 590px;
+	background: red;
+}*/
+/*--逛街好货区域结束--*/
+/*--淘抢购区域开始--*/
+.c-content .rush-purchase { 
+	height: 260px;
+	background: yellow;
+}
+/*--淘抢购区域结束--*/
+/*--广告区域开始--*/
+.c-content .c-ad {
+	height: 70px;
+	background: red;
+}
+/*--广告区域结束--*/
+/*--好店直播区域开始--*/
+.c-content .good-shop-live {
+	height: 540px;
+	background: green;
+}
+/*--好店直播区域结束--*/
+/*--时尚区域开始--*/
+.c-content .fashion {
+	height: 290px;
+	background: skyblue;
+}
+/*--时尚区域结束--*/
+/*--品质特色区域开始--*/
+.c-content .quality-special {
+	height: 770px;
+	background: deeppink;
+}
+/*--品质特色区域结束--*/
+/*--实惠区域开始--*/
+.c-content .cheaper {
+	height: 250px;
+	background: #0f5;
+}
+/*--实惠区域结束--*/
+/*--热卖区域开始--*/
+.c-content .hot-sell {
+	height: 960px;
+	background: #ccc;
+}
+/*--热卖区域结束--*/
+/*--猜你喜欢区域开始--*/
+.c-content .guess-like {
+	height: 4000px;
+	background: blue;
+}
+/*--猜你喜欢区域结束--*/
+/*--服务区域开始--*/
+.c-content .service {
+	height: 260px;
+	background: red;
+}
+/*--服务区域结束 --*/

@@ -1,0 +1,272 @@
+@charset "utf-8";
+#header {
+	background: #f5f5f5;
+}
+#header .h-wrapper {
+	width: 1190px;
+	margin: auto;
+	color: #6b6b6b;
+}
+#header .h-wrapper .top-nav {
+	position: relative;
+	z-index: 1;
+	height: 35px;
+}
+/*--左部导航开始--*/
+.h-wrapper .top-nav .h-l-nav {
+	float: left;
+}
+.top-nav > ul > li {
+	float: left;
+	padding: 10px 12px 10px 8px;
+}
+.top-nav .h-l-nav > li > a,
+.top-nav .h-l-nav > li > span {
+	display: block;
+	line-height: 15px;
+}
+.top-nav .h-l-nav .area {
+	position:relative;
+	padding-left: 6px;
+	padding-right: 24px;
+	color: #3b3b3b;
+}
+.top-nav .h-l-nav .area:after,
+.top-nav .h-r-nav > li:after {
+	content: "";
+	position: absolute;
+	right: 8px;
+	top: 16px;
+	border: 3px solid transparent;
+	border-top-color: #a3a3a3;
+}
+.top-nav .h-l-nav .area:hover,
+.top-nav .h-r-nav > li:hover {
+	background: #fff;
+	box-shadow: 1px 0 0 0 #eee, -1px 0 0 0 #eee;
+}
+.top-nav .h-l-nav .area:hover,
+.top-nav .h-r-nav .lweb-nav:hover {
+	box-shadow: 1px 0 0 0 #eee, -1px 0 0 0 #eee, 0 1px 0 0 #fff;
+}
+.top-nav .h-l-nav .area .h-m-area {
+	display: none;
+	position: absolute;
+	z-index: -1;
+	top: 35px;
+	left: 0;
+	height: 280px;
+	width: 260px;
+	padding: 12px 0;
+	box-shadow: 1px 1px 0 0 #eee,-1px -1px 0 0 #eee;
+	background: #fff;
+	overflow-y: scroll;
+}
+.top-nav .h-l-nav .area:hover .h-m-area {
+	display: block;
+}
+.top-nav li li a {
+	display: block;
+	line-height: 28px;
+	color: inherit;
+}
+.area .h-m-area li a {
+	padding-left: 10px;
+}
+.top-nav li li a:hover {
+	background: #f3f3f3;
+}
+.top-nav .h-l-nav .l-login {
+	padding-right: 0;
+	color: #f40;
+}
+/*--左部导航结束--*/
+/*--右部导航开始--*/
+.h-wrapper .top-nav .h-r-nav {
+	float: right;
+}
+.top-nav .h-r-nav > li {
+	position: relative;
+	float: left;
+}
+.top-nav .h-r-nav > li > a {
+	padding-right: 12px;
+}
+.top-nav .h-r-nav .classify:after {
+	content: "";
+	width: 1px;
+	height: 12px;
+	top: 11px;
+	border :none;
+	background: #e1e1e1;
+}
+.h-r-nav > li > ul {
+	display: none;
+	position: absolute;
+	top: 35px;
+	padding: 10px 0;
+	background: #fff;
+} 
+.h-r-nav li .my-tb,
+.h-r-nav li .fav-ul,
+.h-r-nav li .sell-ul,
+.h-r-nav li .contact {
+	left: 0;
+}
+.top-nav .h-r-nav li.normalbg:hover {
+	background: inherit;
+	box-shadow: none;
+}
+.h-r-nav li:hover ul {
+	display: block;
+}
+.h-r-nav li  li > a {
+	padding: 0 6px;
+}
+.h-r-nav .my-taobao li a,
+.h-r-nav .cen-sell li a {
+	width: 74px;
+}
+.h-r-nav .fav-li li a {
+	width: 62px;
+}
+.h-r-nav .shopcar .car-btn,
+.h-r-nav .favorite .fav-btn,
+.h-r-nav .web-nav .nav-btn {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 14px;
+	margin-right: 6px;
+}
+.h-r-nav .shopcar .car-btn,
+.h-r-nav .web-nav .nav-btn {
+	color: #f40;
+}
+.h-r-nav .lweb-nav .h-web-nav {
+	display:none;
+	z-index: -1;
+	right: 0;
+	width: 1189px;
+	height: 310px;
+	box-sizing: border-box;
+	padding: 0 12px;
+	box-shadow: 1px 1px 0 0 #eee, -1px -1px 0 0 #eee;
+}
+.h-r-nav .lweb-nav:hover .h-web-nav {
+	display: block;
+}
+.lweb-nav .h-web-nav > li {
+	float: left;
+	width: 290.5px;
+	height: 100%;
+}
+.lweb-nav .h-web-nav .recommend {
+	height: 260px;
+}
+.lweb-nav .h-web-nav > li + li {
+	border-left: 1px solid #eee;
+}
+.h-web-nav li h3 {
+	margin-top: 10px;
+	line-height: 16px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.h-web-nav .body h3 {
+	color: #f40;
+}
+.h-web-nav .spe-market h3,
+.h-web-nav .ali-app h3,
+.h-web-nav .recommend h3 {
+	padding-left: 10px;
+}
+.h-web-nav .spe-market h3 {
+	color:  #a0b945;
+}
+.h-web-nav .ali-app h3 {
+	color: #df61ab;
+}
+.h-web-nav .recommend h3 {
+	color: #52a0e5;
+}
+.h-web-nav .spe-market ul,
+.h-web-nav .ali-app ul,
+.h-web-nav .recommend ul {
+	padding-left: 6px;
+}
+.h-web-nav li ul li {
+	float: left;
+}
+.h-web-nav li ul li + li,
+.h-web-nav .spe-market .more-sixpx {
+	margin-left: 32px;
+}
+li.spe-market ul li + li {
+	margin-left: 38px;
+}
+.spe-market ul .less-oword,
+.h-web-nav .ali-app .less-oword {
+	margin-left: 44px;
+}
+.spe-market ul .less-tword,
+.h-web-nav .ali-app .less-tword {
+	margin-left: 56px;
+}
+.spe-market ul .more-oword {
+	margin-left: 26px;
+}
+.h-web-nav .spe-market .extra {
+	width: 54px;
+}
+.spe-market ul .less-sixpx {
+	margin-left: 50px;
+}
+/*.h-web-nav .spe-market .more-sixpx {
+	margin-left: 32px;
+}*/
+/*.h-web-nav .ali-app .less-tword {
+	margin-left: 56px;
+}*/
+/*.h-web-nav .ali-app .less-oword {
+	margin-left: 44px;
+}*/
+.h-web-nav li ul li.two-word {
+	margin-left: 20px;
+}
+.h-web-nav .recommend ul li + li {
+	margin-left: 80px;
+}
+.h-web-nav .recommend ul .less-oword {
+	margin-left: 92px;
+}
+.h-web-nav li ul li.nomargin-left {
+	clear: left;
+	margin-left: 0;
+} 
+.h-web-nav li ul li a{
+	line-height: 12px;
+	padding: 9px 6px;
+}
+.h-web-nav .body ul li a:hover  {
+	background: #f40;
+}
+.h-web-nav .spe-market ul li a:hover {
+	background:#a0b945;
+}
+.h-web-nav .ali-app ul li a:hover {
+	background: #df61ab;
+}
+.h-web-nav .recommend ul li a:hover {
+	background: #52a0e5;
+}
+.h-web-nav > li ul li a:hover {
+	color: #fff;
+	border-radius: 3px;
+}
+/*--右部导航结束--*/
+#header .top-ad {
+	display: none;
+	height: 115px;
+	background: #567;
+}

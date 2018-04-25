@@ -1,0 +1,173 @@
+/*底部区域*/
+#footer{
+	height:620px;
+	background:#fff;
+}
+/*--服务区域--开始*/
+.f-serve {
+	background:#f0f0f0;
+}
+.f-s-cont,
+.f-i-cont {
+	width:1200px;
+	height:100%;
+	margin:auto;
+}
+.f-s-cont .s-title {
+	border-bottom:1px solid  #e4e4e4;
+}
+.s-title ul li {
+	float:left;
+	width:300px;
+	height:46px;
+	padding:47px 0;
+}
+.s-title ul li a {
+	font-size: 16px;
+	color:inherit;
+} 
+.s-title ul li a i {
+	display:inline-block;
+	width:46px;
+	height:46px;
+	margin-right:20px;
+	background:url(../images/icon-common.png) no-repeat 0 -151px;
+	vertical-align:middle;
+}
+.s-title ul li a .sale-return {
+	background-position:-94px -151px;
+}
+.s-title ul li a .frees {
+	background-position: -141px -151px;
+}
+.s-title ul li a .maintain {
+	background-position:-47px -151px;
+}
+.s-c-contain dl {
+	float:left;
+	width:160px;
+	height:170px;
+	padding:25px 0;
+}
+.s-c-contain .dl-service {
+	width:240px;
+}
+.s-c-contain .dl-service dt {
+	height: 80px;
+}
+.s-c-contain .dl-service dt .num {
+	height:24px;
+	line-height:24px;
+	font-size: 24px;
+	padding-top:18px;
+	padding-bottom:0;
+}
+.s-c-contain .dl-service dt .cost {
+	padding:0;
+}
+.s-c-contain .dl-service dt p {
+	line-height: 36px;
+}
+.s-c-contain .dl-service dd a {
+	display:block;
+	width:160px;
+	padding:9px 0;
+	margin-bottom:10px;
+	border:1px solid #ddd;
+	border-radius:5px;
+	line-height:18px;
+	text-align:center;
+	font-size:14px;
+	color:#ba141e;
+}
+.s-c-contain .dl-service dd a i {
+	display:inline-block;
+	width:22px;
+	height:18px;
+	margin-right:6px;
+	vertical-align:-4px;
+}
+.s-c-contain .dl-service dd a .online {
+	background:url(../images/icon-common.png) no-repeat -101px -23px;
+}
+.s-c-contain .dl-service dd a .report {
+	width:20px;
+	background:url(../images/icon2.png) no-repeat -383px -1px;
+}
+.s-c-contain dl dt {
+	position:relative;
+	height:46px;
+	font-size:14px;
+}
+.s-c-contain dl dt:before {
+	content: "";
+	position:absolute;
+	width:24px;
+	height:2px;
+	background:#a8a8a8;
+}
+.s-c-contain dl dt p {
+	line-height:16px;	
+	padding:16px 0;
+}
+.s-c-contain dl dt .friend-a {
+	position:relative;
+}
+.s-c-contain dl dt .friend-a span{
+	display:inline-block;
+	width:14px;
+	line-height:12px;
+	font-size:12px;
+	padding:1px 0;
+	color:#fff;
+	text-align:center;
+	border-radius:3px;
+	background:#b3b3b3;
+}
+.s-c-contain dl dt .friend-a .f-l-btn {
+	background:#ccc;
+	margin-left:4px;
+	cursor:not-allowed;
+}
+.s-c-contain dl dt .friend-a .f-r-btn {
+	cursor:pointer;
+}
+.s-c-contain dl dd p a {
+	display: inline-block;
+	line-height:24px;
+}
+/*--服务区域--结束*/
+.f-information {
+	height:230px;
+	padding-top:30px;
+	background:#e6e6e6;
+}
+.f-i-cont .f-i-left {
+	margin-right:40px;
+	float:left;
+}
+.f-i-cont .f-i-left a {
+	display:block;
+	margin-top:20px;
+}
+.f-i-cont .f-i-center {
+	float:left;
+}
+.f-i-cont .f-i-center p {
+	height:24px;
+}
+.f-i-cont .f-i-right {
+	float:right;
+	margin-top:16px;
+	font-size:0;
+}
+.f-i-right a {
+	display:inline-block;
+}
+.f-i-right a + a {
+	margin-left:6px;
+}
+.f-i-right a img {
+	width:70px;
+	height:24px;
+}
