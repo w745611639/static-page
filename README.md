@@ -1,2 +1,2 @@
 # static-page
-html
+一些静态页面
