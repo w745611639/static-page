@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 2px solid #eb7350;
+  box-shadow: 0 1px 5px #808080;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 1;
+}
+.header .header-con {
+  width: 1250px;
+  height: 100%;
+  margin: auto;
+}
+.header .header-con .logo,
+.header .header-con .search-group {
+  float: left;
+}
+.header .header-con .logo {
+  padding-right: 30px;
+}
+.header .header-con .search-group {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 468px;
+}
+.header .header-con .search-group .search-bar {
+  height: 28px;
+  width: 100%;
+  border: none;
+  outline: none;
+  vertical-align: top;
+  background: #f2f2f5;
+  text-indent: 12px;
+  font-size: 12px;
+}
+.header .header-con .search-group .search-btn {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  height: 16px;
+  width: 16px;
+  background: url(../images/sprite.png);
+}
+.header .header-con .search-group .search-btn:hover {
+  background-position-y: -16px;
+}
+.header .header-con .center-nav li,
+.header .header-con .login a,
+.header .header-con .register a {
+  float: left;
+}
+.header .header-con .login,
+.header .header-con .register,
+.header .header-con .center-nav {
+  float: right;
+}
+.header .header-con .login a,
+.header .header-con .register a,
+.header .header-con .center-nav a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header .header-con .center-nav li {
+  margin-right: 30px;
+}
+.header .header-con .center-nav li a {
+  height: 30px;
+  line-height: 30px;
+}
+.header .header-con .center-nav li a i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  vertical-align: -2px;
+  background: url(../images/sprite.png);
+  background-position: -16px 0;
+}
+.header .header-con .center-nav li a:hover i {
+  background-position-y: -16px;
+}
+.header .header-con .center-nav li:nth-child(2) a i {
+  background-position-x: -32px;
+}
+.header .header-con .center-nav li:nth-child(3) a i {
+  background-position-x: -48px;
+}
+.header .header-con .center-nav li:nth-child(4) a i {
+  background-position-x: -64px;
+}
+.header .header-con .login,
+.header .header-con .register {
+  margin: 8px 0;
+}
+.header .header-con .login a,
+.header .header-con .register a {
+  height: 14px;
+  line-height: 14px;
+}
+.header .header-con .register {
+  padding-right: 16px;
+  border-right: 1px solid #ccc;
+}
+.header .header-con .login {
+  padding-left: 16px;
+}
+@media screen and (max-width: 1249px) {
+  .header .header-con .search-group {
+    width: 218px;
+  }
+}
+@media screen and (max-width: 1006px) {
+  .header {
+    width: 760px;
+  }
+  .header .header-con .search-group {
+    width: 218px;
+  }
+}

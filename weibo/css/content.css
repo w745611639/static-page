@@ -1,0 +1,330 @@
+@charset "UTF-8";
+.content {
+  width: 1170px;
+  height: 1000px;
+  margin: 60px auto;
+}
+.content .left-nav {
+  float: left;
+  width: 110px;
+}
+.content .left-nav .nav li {
+  margin-bottom: 5px;
+}
+.content .left-nav .nav li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  border-radius: 5px;
+}
+.content .left-nav .nav li a.active,
+.content .left-nav .nav li a:hover {
+  background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+  color: #fff;
+}
+.content .right-aside {
+  float: right;
+  width: 340px;
+}
+.content .right-aside .login-area {
+  padding: 20px;
+  background: #eee;
+}
+.content .right-aside .login-area .login-con {
+  position: relative;
+  padding: 6px 15px;
+  background: #fff;
+  box-shadow: 0 0 2px #ccc;
+  border-radius: 3px;
+}
+.content .right-aside .login-area .login-con .login-title {
+  border-bottom: 1px solid #ccc;
+}
+.content .right-aside .login-area .login-con .login-title > div {
+  float: left;
+  padding-top: 10px;
+}
+.content .right-aside .login-area .login-con .login-title a {
+  display: block;
+  width: 135px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.content .right-aside .login-area .login-con .login-title a.active {
+  color: #000;
+  border-bottom: 2px solid #fa733b;
+}
+.content .right-aside .login-area .login-con form {
+  padding-top: 15px;
+}
+.content .right-aside .login-area .login-con form .input-group {
+  position: relative;
+}
+.content .right-aside .login-area .login-con form .input-group input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  text-indent: 36px;
+}
+.content .right-aside .login-area .login-con form .input-group input:focus {
+  border-color: #fa733b;
+}
+.content .right-aside .login-area .login-con form .input-group i {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  height: 15px;
+  width: 15px;
+  background: url(../images/sprite_login.png) no-repeat;
+  background-position: 0 -100px;
+}
+.content .right-aside .login-area .login-con form .account i {
+  background-position: 0 -100px;
+}
+.content .right-aside .login-area .login-con form .password {
+  margin-top: 10px;
+}
+.content .right-aside .login-area .login-con form .password i {
+  background-position: -50px -100px;
+}
+.content .right-aside .login-area .login-con form .safe-methods .cellphone i {
+  background-position-x: -99px;
+}
+.content .right-aside .login-area .login-con form .safe-methods .verification-code {
+  margin-top: 10px;
+  font-size: 0;
+}
+.content .right-aside .login-area .login-con form .safe-methods .verification-code a {
+  display: inline-block;
+  width: 141px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  font-size: 12px;
+  text-align: center;
+}
+.content .right-aside .login-area .login-con form .safe-methods .verification-code a:hover {
+  background: #c9c9c9;
+  color: #808080;
+}
+.content .right-aside .login-area .login-con form .safe-methods .verification-code input {
+  width: 115px;
+  vertical-align: bottom;
+  text-indent: 10px;
+}
+.content .right-aside .login-area .login-con form .options {
+  margin-top: 12px;
+}
+.content .right-aside .login-area .login-con form .options label {
+  float: left;
+}
+.content .right-aside .login-area .login-con form .options label input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.content .right-aside .login-area .login-con form .options .forget {
+  float: right;
+}
+.content .right-aside .login-area .login-con form .submit {
+  margin: 12px 0;
+  height: 36px;
+}
+.content .right-aside .login-area .login-con form .submit input {
+  width: 100%;
+  height: 100%;
+  background: #ff8140;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.content .right-aside .login-area .login-con form .submit input:hover {
+  background: #f76717;
+}
+.content .right-aside .login-area .login-con form .newuser {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+  color: #808080;
+}
+.content .right-aside .login-area .login-con form .newuser a {
+  color: #eb7350;
+}
+.content .right-aside .login-area .login-con form .other-login {
+  font-size: 0;
+  padding-top: 8px;
+}
+.content .right-aside .login-area .login-con form .other-login span {
+  font-size: 12px;
+}
+.content .right-aside .login-area .login-con form .other-login a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/sprite_login.png) no-repeat;
+  background-position: 0px -45px;
+  vertical-align: bottom;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_tecent {
+  background-position-x: -50px;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_yidong {
+  background-position-x: -300px;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_tianyi {
+  background-position-x: -100px;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_360 {
+  background-position-x: -150px;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_liantong {
+  background-position-x: -200px;
+}
+.content .right-aside .login-area .login-con form .other-login .icon_baidu {
+  background-position-x: -250px;
+}
+.content .right-aside .login-area .login-con .choose-method {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../images/sprite_login.png) no-repeat;
+  background-position: 0px -150px;
+}
+.content .right-aside .weibo-fresh li .news {
+  float: left;
+}
+.content .right-aside .weibo-fresh li .img {
+  width: 130px;
+  float: right;
+  text-align: right;
+}
+.content .right-aside .weibo-fresh li .img img {
+  height: 70px;
+}
+.content .right-aside .weibo-hot li div.news {
+  padding-left: 62px;
+}
+.content .right-aside .weibo-hot li div.news p.main-message {
+  padding-top: 5px;
+}
+.content .right-aside .weibo-hot li div.news .node {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .right-aside .weibo-hot li .img {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.content .right-aside .weibo-hot li .img img {
+  display: block;
+  height: 50px;
+}
+.content .right-aside .weibo-short-video .zone-list .img {
+  float: right;
+}
+.content .right-aside .weibo-short-video .zone-list .img img {
+  height: 70px;
+}
+.content .right-aside .weibo-short-video .zone-list .news .main-message {
+  padding-top: 6px;
+  line-height: 18px;
+}
+.content .right-aside .weibo-seach-man .zone-list {
+  color: #333;
+}
+.content .right-aside .weibo-seach-man .zone-list .list-title {
+  float: none;
+  font-size: 16px;
+  color: #808080;
+}
+.content .right-aside .weibo-seach-man .zone-list li {
+  float: left;
+  width: 100px;
+}
+.content .right-aside .weibo-seach-man .zone-list a {
+  height: 14px;
+  line-height: 14px;
+}
+.content .right-aside .weibo-seach-man .zone-list a img {
+  width: 14px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.content .right-aside .specialist,
+.content .right-aside .interest,
+.content .right-aside .organization {
+  padding-top: 20px;
+}
+.content .right-aside .organization {
+  border-bottom: none;
+}
+.content .middle-show {
+  padding-left: 140px;
+  padding-right: 370px;
+}
+.content .middle-show .slide-group {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.content .middle-show .slide-group .slide-show {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3300px;
+}
+.content .middle-show .slide-group .slide-show li {
+  float: left;
+}
+.content .middle-show .slide-group .slide-show a {
+  display: block;
+  width: 660px;
+  height: 300px;
+  overflow: hidden;
+}
+.content .middle-show .slide-group .slide-show a img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.content .middle-show .slide-group .slide-show a .pic-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
+}
+.content .middle-show .slide-group .slide-control {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.content .middle-show .slide-group .slide-control li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.content .middle-show .slide-group .slide-control li.active {
+  background: #f07c3c;
+}
+.content .middle-show .update-weibo {
+  margin-top: 20px;
+}
